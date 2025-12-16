@@ -7,11 +7,11 @@ module calc_top(
         output logic [31:0] addr_B,
         output logic [31:0] addr_S,
         output logic [31:0] addr_A,
-        output logic [7:0][16:0] final_result//最终结果输出
+        output logic [7:0][15:0] final_result//最终结果输出
     );
     adder_if adder_bus[8](clk,rst_n);
     logic init;
-    logic [7:0][3:0][16:0] result_engine;//Y
+    logic [7:0][3:0][15:0] result_engine;//Y
     logic [7:0][2:0] shift_out;
     calc_unit u_calc_unit(
                   .clk        	(clk         ),

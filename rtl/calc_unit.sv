@@ -4,7 +4,7 @@ module calc_unit(
     input logic start,
     input logic [159:0] weight_in,//S
     input logic [7:0][3:0][63:0] data_in,//A
-    output logic [7:0][3:0][16:0] result_engine,//Y
+    output logic [7:0][3:0][15:0] result_engine,//Y
     output logic [7:0][2:0] shift_out
 );
     engine_if engine_bus[8]();
